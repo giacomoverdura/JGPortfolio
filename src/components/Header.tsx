@@ -3,9 +3,9 @@ import {FaGithub, FaLinkedinIn} from 'react-icons/fa';
 
 export default function Header() {
   return (
-    <section id="header" className="mb-10 border-b border-gray-300 pb-10 md:pb-20">
-      <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-8">
-        <div className="name text-center md:text-left">
+    <section id="header" className="mb-10 border-b border-gray-300 pb-10 md:pb-15">
+      <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-8">
+        <div className="name text-center lg:text-left">
           <h1 className="text-4xl md:text-5xl font-semibold">James Gulay</h1> 
           <p className="text-xl md:text-2xl font-sm text-gray-500/70 mt-2">Frontend Developer</p>
           
@@ -36,7 +36,7 @@ export default function Header() {
         </div>
 
         <div className="image">
-          <img src="./profile.jpg" alt="Profile Picture" className="size-32 md:size-40 rounded-full bg-gray-200 object-cover shadow-sm" />
+          <img src="./profile.jpg" alt="Profile Picture" className="size-40 lg:size-40 rounded-full bg-gray-200 object-cover shadow-sm" />
         </div>
 
       </div>
