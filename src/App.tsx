@@ -1,15 +1,11 @@
 import './App.css'
-import Navbar from "./components/Navbar"
-import Hero from "./components/Hero"
+import { AppRouter } from './routes/AppRouter'
 
 function App() {
   return (
     <>
-      <div className="container mx-auto px-50 scroll-smooth">
-        <Navbar />
-        <Hero />w
-      </div>
-    </>
+      <AppRouter />
+    </ >
   )
 }
 
