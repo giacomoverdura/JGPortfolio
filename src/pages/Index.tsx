@@ -3,38 +3,42 @@ import {FaGithub, FaLinkedinIn} from 'react-icons/fa';
 
 export default function Index() {
   return (
-    <div className="max-w-[1200px] w-full mx-auto px-50 pt-20">
-      <section id="header" className="mb-10 border-b border-gray-300 pb-20">
-        <div className="flex items-center justify-between">
-          <div className="name">
-            <h1 className="text-5xl font-semibold">James Gulay</h1>
-            <p className="text-2xl font-sm text-gray-500/70 mt-2">Frontend Developer</p>
-            <div className="link flex items-center text-gray-500/70 gap-2 mt-4">
-              <div className="location flex items-center gap-2 text-sm me-3">
+    <div className="max-w-[1200px] w-full mx-auto px-6 md:px-20 lg:px-40 pt-10 md:pt-20">
+
+      <section id="header" className="mb-10 border-b border-gray-300 pb-10 md:pb-20">
+        <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-8">
+          <div className="name text-center md:text-left">
+            <h1 className="text-4xl md:text-5xl font-semibold">James Gulay</h1> 
+            <p className="text-xl md:text-2xl font-sm text-gray-500/70 mt-2">Frontend Developer</p>
+            
+            <div className="link flex flex-wrap justify-center md:justify-start items-center text-gray-500/70 gap-y-3 gap-x-4 mt-6">
+              <div className="location flex items-center gap-2 text-sm">
                 <MapPin className="size-4 text-green-800/70" />
-                <span>Calooocan City, Philippines</span>
+                <span>Caloocan City, Philippines</span> 
               </div>
-              <div className="email flex items-center gap-2 text-sm me-3">
+              
+              <div className="email flex items-center gap-2 text-sm">
                 <Mail className="size-4 text-green-800/70" />
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bs.jamesgulay@gmail.com" target="_blank" className="hover:text-blue-600 transition-colors duration-300">
-                  bs.jamesgulay@gmail.com
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bs.jamesgulay@gmail.com" target="_blank" className="hover:text-blue-600 transition-colors duration-300"> 
+                  bs.jamesgulay@gmail.com 
                 </a>
               </div>
+
               <div className="social flex items-center gap-4">
-                <a href="https://github.com/giacomoverdura" target="_blank" className="flex items-center gap-2" >
+                <a href="https://github.com/giacomoverdura" target="_blank" className="flex items-center gap-2 hover:opacity-80 transition-opacity"> 
                   <FaGithub className="size-4 text-gray-800" />
-                  Github
+                  <span className="text-sm">Github</span>
                 </a>
-                <a href="https://linkedin.com/in/james-gulay" target="_blank" className="flex items-center gap-2" >
+                <a href="https://linkedin.com/in/james-gulay" target="_blank" className="flex items-center gap-2 hover:opacity-80 transition-opacity"> 
                   <FaLinkedinIn className="size-4 text-blue-600" />
-                  LinkedIn
+                  <span className="text-sm">LinkedIn</span>
                 </a>
               </div>
             </div>
           </div>
 
           <div className="image">
-            <img src="/assets/profile.jpg" className="size-30 rounded-full bg-gray-200 object-cover" />
+            <img src="./profile.jpg" alt="Profile Picture" className="size-32 md:size-40 rounded-full bg-gray-200 object-cover shadow-sm" />
           </div>
 
         </div>
@@ -55,55 +59,63 @@ export default function Index() {
           </a>
         </div>
         
-        <div className="grid grid-cols-6">
-            <div className="col-span-2 row-span-2 text-gray-800 text-mds py-5">
-              <h1>Frontend</h1>
-              <div className="stack mx-3 my-3 flex flex-wrap justify-start gap-2 text-xs">
-                <span className="bg-gray-300/30 w-auto rounded-full p-2">HTML</span>
-                <span className="bg-gray-300/30 w-auto rounded-full p-2">CSS</span>
-                <span className="bg-gray-300/30 w-auto rounded-full p-2">JavaScript</span>
-                <span className="bg-gray-300/30 w-auto rounded-full p-2">React</span>
-                <span className="bg-gray-300/30 w-auto rounded-full p-2">Bootstrap</span>
-                <span className="bg-gray-300/30 w-auto rounded-full p-2">TailwindCSS</span>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-4">
+            
+            <div className="text-gray-800 py-2 md:py-5">
+              <h1 className="font-medium">Frontend</h1>
+              <div className="stack my-3 flex flex-wrap justify-start gap-2 text-xs">
+                <span className="bg-gray-300/30 rounded-full px-3 py-1.5">HTML</span>
+                <span className="bg-gray-300/30 rounded-full px-3 py-1.5">CSS</span>
+                <span className="bg-gray-300/30 rounded-full px-3 py-1.5">JavaScript</span>
+                <span className="bg-gray-300/30 rounded-full px-3 py-1.5">React</span>
+                <span className="bg-gray-300/30 rounded-full px-3 py-1.5">Bootstrap</span>
+                <span className="bg-gray-300/30 rounded-full px-3 py-1.5">TailwindCSS</span>
               </div>
             </div>
-            <div className="col-span-2 row-span-2 text-gray-800 text-mds py-5 col-start-3">
-              <h1>Backend & Databases</h1>
-              <div className="stack mx-3 my-3 flex flex-wrap justify-start gap-2 text-xs">
-                <span className="bg-gray-300/30 w-auto rounded-full p-2">Node.js</span>
-                <span className="bg-gray-300/30 w-auto rounded-full p-2">PostgreSQL</span>
-                <span className="bg-gray-300/30 w-auto rounded-full p-2">MySQL</span>
-                <span className="bg-gray-300/30 w-auto rounded-full p-2">Supabase</span>
+
+            <div className="text-gray-800 py-2 md:py-5">
+              <h1 className="font-medium">Backend & Databases</h1>
+              <div className="stack my-3 flex flex-wrap justify-start gap-2 text-xs">
+                <span className="bg-gray-300/30 rounded-full px-3 py-1.5">Node.js</span>
+                <span className="bg-gray-300/30 rounded-full px-3 py-1.5">PostgreSQL</span>
+                <span className="bg-gray-300/30 rounded-full px-3 py-1.5">MySQL</span>
+                <span className="bg-gray-300/30 rounded-full px-3 py-1.5">Supabase</span>
               </div>
             </div>
-            <div className="col-span-2 row-span-2 text-gray-800 text-mds py-5 col-start-5">
-              <h1>Tools & Development</h1>
-              <div className="stack mx-3 my-3 flex flex-wrap justify-start gap-2 text-xs">
-                <span className="bg-gray-300/30 w-auto rounded-full p-2">Git</span>
-                <span className="bg-gray-300/30 w-auto rounded-full p-2">Github</span>
-                <span className="bg-gray-300/30 w-auto rounded-full p-2">VS Code</span>
-                <span className="bg-gray-300/30 w-auto rounded-full p-2">Prettier</span>
+
+            <div className="text-gray-800 py-2 md:py-5">
+              <h1 className="font-medium">Tools & Development</h1>
+              <div className="stack my-3 flex flex-wrap justify-start gap-2 text-xs">
+                <span className="bg-gray-300/30 rounded-full px-3 py-1.5">Git</span>
+                <span className="bg-gray-300/30 rounded-full px-3 py-1.5">Github</span>
+                <span className="bg-gray-300/30 rounded-full px-3 py-1.5">VS Code</span>
+                <span className="bg-gray-300/30 rounded-full px-3 py-1.5">Prettier</span>
               </div>
             </div>
         </div>
       </section>
 
       <section id="projects" className="border-b border-gray-300 mb-10 pb-10">
-        <div className="header flex items-center justify-between mb-4">
+        <div className="header flex items-center justify-between mb-6">
           <h2 className="text-sm font-semibold text-green-800/70 uppercase">Recent Projects</h2>
           <a href="./RecentProjects" className="text-sm text-green-800/70 hover:text-green-900 transition-colors duration-300">
             View All {'>'}
           </a>
         </div>
-
-        <div className="grid grid-cols-6">
-          <a href="https://mymusicportfoliov1.vercel.app/" target="_blank" className="col-span-2 row-span-2 text-gray-800 text-mds p-5 border border-gray-500/30 hover:bg-gray-400/10 transition-colors duration-300 cursor-pointer rounded-lg">
-            <div className="header flex justify-between">
-              <h1 className="font-medium">My Music Portfolio</h1>
-              <ExternalLink className="size-5 font-medium" />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          
+          <a href="https://mymusicportfoliov1.vercel.app/" target="_blank" className="flex flex-col justify-between p-5 border border-gray-500/30 hover:bg-gray-400/10 transition-all duration-300 cursor-pointer rounded-lg group">
+            <div className="header flex justify-between items-start mb-2">
+              <h1 className="font-medium text-gray-800 group-hover:text-blue-600 transition-colors">
+                My Music Portfolio
+              </h1>
+              <ExternalLink className="size-5 text-gray-400 group-hover:text-blue-600" />
             </div>
-            <span className="text-gray-500 text-xs">A music portfolio web app that showcase my produced and created music.</span>
+            <p className="text-gray-500 text-xs leading-relaxed">
+              A music portfolio web app that showcases my produced and created music.
+            </p>
           </a>
+
         </div>
       </section>
 
@@ -112,24 +124,37 @@ export default function Index() {
         
       </section> */}
 
-      <section id="contact" className="mb-10 border-b border-gray-300 pb-10 flex-row">
+      <section id="contact" className="mb-10 border-b border-gray-300 pb-10">
         <div className="contact-header">
           <h2 className="text-sm font-semibold text-green-800/70 mb-4 uppercase">Contact</h2>
-          <span className="text-sm text-gray-500">I'm open to new opportunities and collaborations. Feel free to reach me out. I'd love to hear it from you.</span>
+          <p className="text-sm text-gray-500 leading-relaxed max-w-2xl">
+            I'm open to new opportunities and collaborations. Feel free to reach out. I'd love to hear from you.
+          </p>
         </div>
-        <div className="button mt-3 flex justify-start items-center gap-4">
-          <button className="text-white bg-green-800/70 hover:bg-green-800/80 transition-color duration-200 cursor-pointer shadow-xs font-medium w-auto flex items-center rounded-md text-sm px-4 py-2.5" type="button">
-          <Mail className="size-4 me-3"/> Email Me
-        </button>
-        
-        <button className="bg-gray-500/10 hover:bg-green-800/70 hover:text-white transition-color duration-200 cursor-pointer shadow-xs font-medium w-auto flex items-center rounded-md text-sm px-4 py-2.5" type="button">
-          <Navigation className="size-4 me-3"/> Message Me on LinkedIn
-        </button>
-        </div>
+
+        <div className="mt-6 flex flex-col md:flex-row justify-start items-stretch md:items-center gap-3 md:gap-4">
+  <button 
+    className="w-full md:w-auto text-white bg-green-800/70 hover:bg-green-800/80 transition-all duration-200 cursor-pointer shadow-sm font-medium flex items-center justify-center rounded-md text-sm px-5 py-3 md:py-2.5" 
+    type="button"
+  >
+    <Mail className="size-4 me-3"/> 
+    Email Me
+  </button>
+  
+  <button 
+    className="w-full md:w-auto bg-gray-500/10 text-gray-700 hover:bg-green-800/70 hover:text-white transition-all duration-200 cursor-pointer shadow-sm font-medium flex items-center justify-center rounded-md text-sm px-5 py-3 md:py-2.5" 
+    type="button"
+  >
+    <Navigation className="size-4 me-3"/> 
+    Message Me on LinkedIn
+  </button>
+</div>
       </section>
 
       <footer className="flex justify-center items-center pb-10">
-        <p className="text-gray-500 text-xs">&copy;2026 James Gulay. All Rights Reserved.</p>
+        <p className="text-gray-500 text-xs text-center px-4">
+          &copy; 2026 James Gulay. All Rights Reserved.
+        </p>
       </footer>
       
       
