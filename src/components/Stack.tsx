@@ -26,11 +26,11 @@ export default function Stack() {
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-4">
         {techStackData.map((stack, index) => (
-          <div key={index} className="text-gray-800 py-2 md:py-5">
-            <h1 className="font-medium">{stack.label}</h1>
+          <div key={index} className="py-2 md:py-5">
+            <h1 className="font-medium text-gray-800">{stack.label}</h1>
             <div className="stack my-3 flex flex-wrap justify-start gap-2 text-xs">
               {stack.items.map((tech, i) => (
-                <span key={i} className="bg-gray-300/30 rounded-full px-3 py-1.5"> {tech} </span>
+                <span key={i} className="bg-gray-300/30 rounded-full text-gray-700 px-3 py-1.5"> {tech} </span>
               ))}
             </div>
 

@@ -1,5 +1,4 @@
-import { MapPin, Mail } from 'lucide-react';
-import {FaGithub, FaLinkedinIn} from 'react-icons/fa';
+import { MapPin, Mail, PhoneCall} from 'lucide-react';
 
 export default function Header() {
   return (
@@ -22,23 +21,21 @@ export default function Header() {
               </a>
             </div>
 
-            <div className="social flex items-center gap-4">
-              <a href="https://github.com/giacomoverdura" target="_blank" className="flex items-center gap-2 hover:opacity-80 transition-opacity"> 
-                <FaGithub className="size-4 text-gray-800" />
-                <span className="text-sm">Github</span>
-              </a>
-              <a href="https://linkedin.com/in/james-gulay" target="_blank" className="flex items-center gap-2 hover:opacity-80 transition-opacity"> 
-                <FaLinkedinIn className="size-4 text-blue-600" />
-                <span className="text-sm">LinkedIn</span>
-              </a>
+            <div className="social flex items-center gap-4 text-sm">
+              <PhoneCall className="size-4 text-green-800/70" />
+              <span>{`(+63)-938-401-1657`}</span>
             </div>
           </div>
         </div>
 
-        <div className="image">
-          <img src="./profile.jpg" alt="Profile Picture" className="size-40 lg:size-40 rounded-full bg-gray-200 object-cover shadow-sm" />
-        </div>
-
+        
+          <div className="size-40 lg:size-40 rounded-full overflow-hidden">
+            <img
+              src="./profile.jpg"
+              alt="Profile Picture"
+              className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+            />
+          </div>
       </div>
     </section>
   )
