@@ -6,8 +6,8 @@ export default function Index() {
 
       <Header />
       <About />
-      <Stack />
       <Projects />
+      <Stack />
       <Contact />
       <Footer />
 

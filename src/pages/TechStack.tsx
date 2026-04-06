@@ -33,7 +33,7 @@ export default function TechStack() {
         <h1 className="font-semibold text-green-800/70 text-lg">{techstack.stackLabel}</h1>
         <div className="mt-3 flex justify-start items-center gap-4">
           {techstack.stackItems.map((item, i) => (
-            <span key={i} className="bg-gray-300/30 hover:bg-gray-300/50 text-sm rounded-full px-3 py-1.5">{item}</span>
+            <span key={i} className="bg-gray-300/30 hover:bg-gray-300/50 text-sm text-gray-600 rounded-full px-3 py-1.5">{item}</span>
           ))}
         </div>
       </div>
