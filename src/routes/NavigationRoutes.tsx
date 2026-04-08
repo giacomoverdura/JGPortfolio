@@ -9,5 +9,3 @@ export {default as Stack} from "../components/Stack";
 export {default as Projects} from "../components/Projects";
 export {default as Contact} from "../components/Contact";
 export {default as Footer} from "../components/Footer";
-export {default as Blog} from "../pages/blog/Blog";
-export {default as Posts} from "../pages/blog//posts/Posts";
