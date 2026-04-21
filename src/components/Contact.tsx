@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedinIn, FaFacebook, FaInstagram } from 'react-icons/fa';
+import resumeFile from "../assets/James_A_Gulay_CV.pdf";
 
 export default function Contact() {
   return (
@@ -57,7 +58,7 @@ export default function Contact() {
             <div className="other-grid">
               <p className="text-green-800/70 font-semibold uppercase mb-3">Other Information</p>
               <div className="flex flex-col w-auto">
-                <a href="" className="mb-2 text-red-500 hover:text-red-700 transition-colors duration-300">My Resume.pdf</a>
+                <a href={resumeFile} download className="mb-2 text-red-500 hover:text-red-700 transition-colors duration-300">My Resume.pdf</a>
                 <a href="https://semaj-blog.vercel.app/" target="_blank" className="mb-2 text-gray-600 hover:text-gray-500">Read my Blog</a>
               </div>
             </div>
