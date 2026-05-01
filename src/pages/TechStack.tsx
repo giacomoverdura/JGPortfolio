@@ -1,27 +1,7 @@
+import { techStackData } from '../data/TechStackData';
+
 export default function TechStack() {
 
-  const techStackData = [
-    {
-      stackLabel : "Frontend",
-      stackItems : ["HTML", "CSS", "JavaScript", "React.js", "Bootstrap", "TailwindCSS", "Prettier"]
-    },
-    {
-      stackLabel : "Backend",
-      stackItems : ["Node.js", "PostgreSQL", "MySQL", "Supabase", "PHP", "Laravel"]
-    },
-    {
-      stackLabel : "Development Tools",
-      stackItems : ["Git", "Github", "VS Code", "Vite", "Teams"]
-    },
-    {
-      stackLabel : "Deployment / Hosting",
-      stackItems : ["Vercel"] 
-    },
-    {
-      stackLabel : "APIs / External Services",
-      stackItems : ["Last.fm API"] 
-    }
-  ]
   return (
     <div className="max-w-[1200px] w-full mx-auto px-4 sm:px-6 md:px-12 lg:px-20 pt-8 md:pt-10 animate-fadeIn">
       <div className="mb-5 border-b border-gray-300 pb-4 flex items-center gap-3 sm:gap-5">
