@@ -6,8 +6,8 @@ export default function Contact() {
     <section id="contact" className="mb-10 border-b border-gray-300 pb-10 px-4 sm:px-6 lg:px-8">
       <div className="contact-header mb-4">
         <h2 className="text-sm font-semibold text-green-800/70 mb-4 uppercase">Contact</h2>
-        <p className="text-sm text-gray-500 leading-relaxed max-w-2xl">
-          I'm open to new opportunities and collaborations. Feel free to reach out. I'd love to hear from you.
+        <p className="text-sm text-gray-500 leading-relaxed max-w-full">
+          Feel free to message me using the form below. You can also find me on social media or download my resume for more information about my experience and skills.
         </p>
       </div>
 
