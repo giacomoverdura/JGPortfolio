@@ -1,11 +1,6 @@
+import { myProjectData } from "../data/ProjectsData";
+
 export default function RecentProjects() {
-  const myProjectData = [
-  {
-    projectName : "My Music Portfolio",
-    projectDesc : "A music portfolio web app that showcase my own creation of music.",
-    projectURL : "https://mymusicportfoliov1.vercel.app/"
-  },
-]
 
   return (
     <>
@@ -27,13 +22,11 @@ export default function RecentProjects() {
                   {project.projectDesc}
                 </p>
                 <div className="ms-5 flex items-center gap-5">
-                  <span className="text-xs bg-gray-200 text-gray-700 w-auto rounded-full px-2 py-1">HTML</span>
-                  <span className="text-xs bg-gray-200 text-gray-700 w-auto rounded-full px-2 py-1">CSS</span>
-                  <span className="text-xs bg-gray-200 text-gray-700 w-auto rounded-full px-2 py-1">Javascript</span>
-                  <span className="text-xs bg-gray-200 text-gray-700 w-auto rounded-full px-2 py-1">React.js</span>
-                  <span className="text-xs bg-gray-200 text-gray-700 w-auto rounded-full px-2 py-1">TailwindCSS</span>
-                  <span className="text-xs bg-gray-200 text-gray-700 w-auto rounded-full px-2 py-1">Last.fm API</span>
-                  <span className="text-xs bg-gray-200 text-gray-700 w-auto rounded-full px-2 py-1">Supabase</span>
+                  {project.tech.map((tech, i) => (
+                    <span key={i} className="text-xs bg-gray-200 text-gray-700 rounded-full px-2 py-1">
+                      {tech}
+                    </span>
+                  ))}
                 </div>
               </a>
             </div>

@@ -17,7 +17,7 @@ const displayedStacks = ["Frontend", "Backend", "Development Tools"];
           <div key={index} className="py-2 md:py-5">
             <h1 className="font-medium text-gray-800">{stack.stackLabel}</h1>
             <div className="stack my-3 flex flex-wrap justify-start gap-2 text-xs">
-              {stack.stackItems.slice(0, 5).map((tech, i) => (
+              {stack.stackItems.slice(0, 4).map((tech, i) => (
                 <span key={i} className="bg-gray-300/30 rounded-full text-gray-700 px-3 py-1.5"> {tech} </span>
               ))}
             </div>

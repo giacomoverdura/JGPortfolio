@@ -5,7 +5,7 @@ export const techStackData = [
     },
     {
       stackLabel : "Backend",
-      stackItems : ["Node.js", "PostgreSQL", "MySQL", "Supabase", "PHP", "Laravel"]
+      stackItems : ["Node.js", "PHP", "Laravel", "PostgreSQL", "MySQL", "Supabase"]
     },
     {
       stackLabel : "Development Tools",
