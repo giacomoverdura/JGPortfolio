@@ -1,4 +1,4 @@
-import { About, Contact, Footer, Header, Projects, Stack } from '../routes/NavigationRoutes';
+import { About, Certifications, Contact, Footer, Header, Projects, Stack } from '../routes/NavigationRoutes';
 
 export default function Index() {
   return (
@@ -8,13 +8,9 @@ export default function Index() {
       <About />
       <Projects />
       <Stack />
+      <Certifications />
       <Contact />
       <Footer />
-
-      {/* <section id="certifications" className="mb-10 border-b border-gray-300 pb-10">
-        <h2 className="text-sm font-semibold text-green-800/70 mb-4 uppercase">Recent Certifications</h2>
-        
-      </section> */}
     </div>
   );
 }

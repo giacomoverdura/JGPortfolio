@@ -1,7 +1,7 @@
 import { techStackData } from '../data/TechStackData';
 
 export default function Stack() {
-const displayedStacks = ["Frontend", "Backend", "Development Tools"];
+const displayedStacks = ["Frontend", "Backend & Databases", "Tools & Methods"];
 
   return (
     <section id="tech-stack" className="border-b border-gray-300 mb-10 pb-10">

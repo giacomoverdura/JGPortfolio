@@ -2,7 +2,7 @@ export {default as NotFound} from "../pages/NotFound";
 export {default as Index} from "../pages/Index";
 export {default as TechStack} from "../pages/TechStack";
 export {default as RecentProjects} from "../pages/RecentProjects";
-export {default as Certifications} from "../pages/Certifications";
+export {default as Certifications} from "../components/Certifications";
 export {default as Header} from "../components/Header";
 export {default as About} from "../components/About";
 export {default as Stack} from "../components/Stack";

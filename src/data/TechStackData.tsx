@@ -1,22 +1,18 @@
 export const techStackData = [
     {
       stackLabel : "Frontend",
-      stackItems : ["HTML", "CSS", "JavaScript", "React.js", "Bootstrap", "TailwindCSS", "Prettier"]
+      stackItems : ["HTML", "CSS", "JavaScript", "React.js", "Bootstrap", "TailwindCSS", "Prettier", "Shadcn UI",]
     },
     {
-      stackLabel : "Backend",
+      stackLabel : "Backend & Databases",
       stackItems : ["Node.js", "PHP", "Laravel", "PostgreSQL", "MySQL", "Supabase"]
     },
     {
-      stackLabel : "Development Tools",
-      stackItems : ["Git", "Github", "VS Code", "Vite", "Teams"]
+      stackLabel : "Tools & Methods",
+      stackItems : ["Git", "Github", "VS Code", "Postman", "Vite", "Teams", "Agile Methodology", ]
     },
     {
-      stackLabel : "Deployment / Hosting",
-      stackItems : ["Vercel"] 
+      stackLabel : "DevOps & Operating Systems",
+      stackItems : ["Vercel", "Windows", "Linux",] 
     },
-    {
-      stackLabel : "APIs / External Services",
-      stackItems : ["Last.fm API"] 
-    }
   ]
